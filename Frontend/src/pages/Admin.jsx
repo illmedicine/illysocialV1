@@ -111,7 +111,7 @@ const Admin = () => {
           <button onClick={fetchOrders} className="refresh-btn">🔄 Refresh</button>
         </div>
 
-        {/* Stats Cards */}
+      
         <div className="stats-grid">
           <div className="stat-card total">
             <div className="stat-value">{stats.total}</div>
@@ -135,8 +135,7 @@ const Admin = () => {
           </div>
         </div>
 
-        {/* Filter */}
-        <div className="filter-bar">
+         <div className="filter-bar">
           <span className="filter-label">Filter by status:</span>
           <select 
             value={filter} 
@@ -152,7 +151,7 @@ const Admin = () => {
           </select>
         </div>
 
-        {/* Orders Table */}
+      
         <div className="orders-table-container">
           <table className="orders-table">
             <thead>
@@ -208,7 +207,7 @@ const Admin = () => {
           </table>
         </div>
 
-        {/* Order Detail Modal */}
+        
         {selectedOrder && (
           <div className="modal-overlay" onClick={() => setSelectedOrder(null)}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
